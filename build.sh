@@ -8,4 +8,5 @@ if [ -z "$1" ]; then
 fi
 
 ./build-rpm.sh $1
-./build-deb.sh $1
+#EDIT: Disabling debian package
+#./build-deb.sh $1

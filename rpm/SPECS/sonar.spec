@@ -79,9 +79,10 @@ rm -rf %{buildroot}
 /opt/sonar
 %config(noreplace) /opt/sonar/conf/sonar.properties
 
-%attr(0755,sonar,sonar) /opt/sonar/bin/linux-x86-32/sonar.sh
-%attr(0755,sonar,sonar) /opt/sonar/bin/linux-x86-32/wrapper
-%attr(0755,sonar,sonar) /opt/sonar/bin/linux-x86-32/lib/libwrapper.so
+#EDIT: No 32 bits
+#%attr(0755,sonar,sonar) /opt/sonar/bin/linux-x86-32/sonar.sh
+#%attr(0755,sonar,sonar) /opt/sonar/bin/linux-x86-32/wrapper
+#%attr(0755,sonar,sonar) /opt/sonar/bin/linux-x86-32/lib/libwrapper.so
 
 %attr(0755,sonar,sonar) /opt/sonar/bin/linux-x86-64/sonar.sh
 %attr(0755,sonar,sonar) /opt/sonar/bin/linux-x86-64/wrapper
